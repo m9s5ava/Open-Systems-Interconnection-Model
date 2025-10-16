@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OSI Model</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="title"> OSI Model </div>
+  </header>
+
+
+  <section class="secc">
+    <h2><i class="fas fa-plug"></i>Open Systems Interconnection Model</h2>
+    <p>نموذج نظري وضعته منظمة ISO لتوحيد الطريقة التي تتواصل بها أنظمة الكمبيوتر المختلفة عبر الشبكات.</p>
+    <ul>
+      <li><strong>الهدف: </strong> يهدف النموذج إلى تقسيم عملية الاتصال عبر الشبكة إلى سبع طبقات، بحيث تؤدي كل طبقة
+        وظيفة محددة وتتعامل مع الطبقات المجاورة لها فقط. هذا يسهل تصميم الشبكات، ويسهّل التوافق بين الأجهزة والبرامج
+        من شركات مختلفة.</li>
+    </ul>
+    <img class="immmg" src="img/istockphoto-1439286146-612x612.jpg" alt="OSI" width="250px">
+  </section>
+
+
+  <div class="container">
+
+    <nav>
+      <a href="#layer7">Application</a>
+      <a href="#layer6">Presentation</a>
+      <a href="#layer5">Session</a>
+      <a href="#layer4">Transport</a>
+      <a href="#layer3">Network</a>
+      <a href="#layer2">Data Link</a>
+      <a href="#layer1">Physical</a>
+    </nav>
+
+    <section id="layer1">
+      <h2><i class="fas fa-plug"></i> Physical Layer</h2>
+      <p>تنقل البيانات على شكل إشارات كهربائية أو ضوئية. هي الطبقة المسؤولة عن الاتصال الفعلي بين الأجهزة.</p>
+      <ul>
+        <li><strong>المهام:</strong> إرسال واستقبال الـ Bits.</li>
+        <li><strong>أمثلة:</strong> Ethernet cables, Fiber optics, USB.</li>
+        <li><strong>أجهزة:</strong> Hubs, Repeaters.</li>
+      </ul>
+    </section>
+
+    <section id="layer2">
+      <h2><i class="fas fa-link"></i> Data Link Layer </h2>
+      <p>تتعامل مع الإرسال بين الأجهزة داخل نفس الشبكة المحلية، وتقوم بتقسيم البيانات إلى إطارات (Frames).</p>
+      <ul>
+        <li><strong>المهام:</strong> التحكم في الوصول للوسط، واكتشاف وتصحيح الأخطاء.</li>
+        <li><strong>أمثلة:</strong> Ethernet, Wi-Fi, MAC Addressing.</li>
+        <li><strong>أجهزة:</strong> Switches, Network cards.</li>
+      </ul>
+    </section>
+
+    <section id="layer3">
+      <h2><i class="fas fa-network-wired"></i> Network Layer </h2>
+      <p>تتعامل مع عنونة وتوجيه البيانات لتنتقل من شبكة إلى شبكة.</p>
+      <ul>
+        <li><strong>المهام:</strong> التوجيه (Routing) وتحديد المسار.</li>
+        <li><strong>أمثلة:</strong> IP, ICMP, Routers.</li>
+        <li><strong>الوحدات:</strong> Packets.</li>
+      </ul>
+    </section>
+
+    <section id="layer4">
+      <h2><i class="fas fa-shipping-fast"></i> Transport Layer </h2>
+      <p>تضمن تسليم البيانات كاملة وصحيحة من المصدر إلى الوجهة.</p>
+      <ul>
+        <li><strong>المهام:</strong> التحكم في الأخطاء، التجزئة، إعادة التجميع.</li>
+        <li><strong>بروتوكولات:</strong> TCP (موثوق), UDP (غير موثوق).</li>
+        <li><strong>الوحدات:</strong> Segments / Datagrams.</li>
+      </ul>
+    </section>
+
+    <section id="layer5">
+      <h2><i class="fas fa-comments"></i> Session Layer </h2>
+      <p>تنشئ وتدير الجلسات بين التطبيقات على الأجهزة المختلفة.</p>
+      <ul>
+        <li><strong>المهام:</strong> بدء الجلسات، إدارتها، وإنهاؤها.</li>
+        <li><strong>أمثلة:</strong> NetBIOS, RPC, PPTP.</li>
+      </ul>
+    </section>
+
+    <section id="layer6">
+      <h2><i class="fas fa-desktop"></i> Presentation Layer </h2>
+      <p>تحول البيانات من صيغة لأخرى، وتقوم بالتشفير أو الضغط حسب الحاجة.</p>
+      <ul>
+        <li><strong>المهام:</strong> التشفير، فك التشفير، التحويل بين الصيغ.</li>
+        <li><strong>أمثلة:</strong> SSL/TLS, JPEG, MPEG.</li>
+      </ul>
+    </section>
+
+    <section id="layer7">
+      <h2><i class="fas fa-server"></i> Application Layer </h2>
+      <p>الطبقة الأقرب للمستخدم، وهي المسؤولة عن توفير واجهة استخدام لخدمات الشبكة.</p>
+      <ul>
+        <li><strong>المهام:</strong> تمكين التطبيقات من التفاعل مع الشبكة.</li>
+        <li><strong>أمثلة:</strong> HTTP, FTP, DNS, SMTP.</li>
+        <li><strong>أجهزة/برمجيات:</strong> المتصفحات، برامج البريد، تطبيقات الشبكات.</li>
+      </ul>
+    </section>
+
+    <div class="btn-container">
+      <a href="qqe.html" class="question-btn">
+        <i class="fas fa-question-circle"></i> Questions
+      </a>
+    </div>
+    <div class="btn-container">
+      <a href="ff.html" class="question-btn">
+        <i class="fas fa-question-circle"></i> Pictures
+      </a>
+    </div>
+
+  </div>
+</body>
+
+</html>

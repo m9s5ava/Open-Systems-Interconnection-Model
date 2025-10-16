@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  font-family: 'Cairo', sans-serif;
+  background-color: #0d0d0d;
+  color: #ff3b3b;
+}
+
+header {
+  background: #1a0000;
+  padding: 20px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  box-shadow: 0 4px 10px #ff1a1a55;
+}
+
+header .title {
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px #ff1a1a;
+  }
+
+  100% {
+    text-shadow: 0 0 15px #ff1a1a;
+  }
+}
+
+nav {
+  background: #330000;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 5px;
+}
+
+nav a {
+  color: #ff4c4c;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border: 2px solid #ff1a1a;
+  border-radius: 8px;
+  transition: 0.3s;
+  white-space: nowrap;
+  font-size: 0.9rem;
+}
+
+nav a:hover {
+  background: #ff1a1a;
+  color: white;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+section {
+  padding: 30px 20px;
+  border-bottom: 1px solid #ff1a1a33;
+  background: #1a0000;
+  margin: 20px 0;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+section:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px #ff1a1a;
+}
+
+section h2 {
+  color: #ff1a1a;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+section h2 i {
+  margin-left: 10px;
+}
+
+section p,
+section ul {
+  color: #ff9a9a;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+section ul {
+  list-style-position: inside;
+  padding: 0;
+}
+
+.btn-container {
+  text-align: center;
+  margin: 40px 0 20px;
+}
+
+.question-btn {
+  background: #ff1a1a;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.question-btn:hover {
+  background: #cc0000;
+}
+
+.immmg {
+  margin-top: 20px;
+  width: 15%;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #ff1a1a88;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.immmg:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #ff0000;
+}
+
+
+.secc {
+  width: 93%;
+  margin: 20px auto;
+  padding: 30px 20px;
+  border-bottom: 1px solid #ff1a1a33;
+  background: #1a0000;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
